@@ -275,7 +275,7 @@ void timer::main() {
                 break;
             }
             case STOPWATCH:{
-                for(int i = 0; i < 3600; i++){
+                for(int i = sec; i < 3600; i++){
                     disp_screens(i);
                     if(stop_button.read() == true){
                         state = PAUSED;
